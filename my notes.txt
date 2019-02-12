@@ -1,0 +1,78 @@
+Vagrant: Quick Start
+A fast introduction to the Vagrant tool for managing virtual development environments
+Jason Tyaylor
+
+What is Vagrant?
+- Command Line Utility
+- Manage Virtual Machines
+	- Development Environments
+- Scripting/Images
+	- Reduces Errors/Saves Time
+
+Providers:
+- Virtual Box (default)
+- VMWare
+- Parallels
+
+Common Setup
+- Networking
+- Shared Folders
+- Other Settings
+
+Common Control
+- Starting
+- Stopping
+- Accessing
+
+ Common Image
+- Vagrant Box
+- Contains VM Image
+- Format for all VM Providers
+
+Common Scripting
+- Scripting = Provisioning
+- Many Supported
+- Chef, Puppet, Ansible ..
+	- Shell Script
+
+Quick Installation Windows 10
+- Process
+	- Windows 10 
+	- Others with Tweaks
+	- See Install Notes
+	- See Bonus
+
+Software
+- Git for Windows
+- Notepad++
+- VirtualBox
+- Vagrant
+
+Git configuration
+----------------------------------
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+
+Notepad++ configuration
+---------------------------------------
+Append to System's PATH variable:
+- Full Folder Path to Notepad++.exe
+- Example: C:\Programs Files\Notepad++
+- Separate paths with semi-colon (;)
+
+notepad++ ~/.bash_profile
+alias npp='notepad++ -multiInst -nosession'
+Old versions of Git <2.0
+use .bashrc instead
+
+git config --global core.editor "notepad++ -multiInst -nosession"
+git config --global -e
+
+vagrant box add title url
+$ vagrant box add {title} {url}
+ $ vagrant init {title}
+ $ vagrant up
+
+
+
+
